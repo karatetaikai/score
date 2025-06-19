@@ -1,6 +1,6 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { background: #000; color: #fff; font-family: sans-serif; display: flex; justify-content: flex-start; }
-#container { margin: 1vw auto; position: relative; border: 0.5vw solid #fff; width: 90vw; margin: 1vw 0; }
+#container { position: relative; border: 0.5vw solid #fff; width: 90vw; margin: 1vw 0; }
 #timer-banner { position: relative; background: #333; text-align: center; padding: 3px 0; }
 #match-id { position: absolute; top: 0.5vw; left: 1vw; font-size: 1.5vw; z-index: 1; color: #fff; }
 #timer { font-size: 8vw; font-weight: bold; }
