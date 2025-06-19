@@ -1,0 +1,28 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #000; color: #fff; font-family: sans-serif; display: flex; justify-content: flex-start; }
+#container { margin: 1vw auto; position: relative; border: 0.5vw solid #fff; width: 90vw; margin: 1vw 0; }
+#timer-banner { position: relative; background: #333; text-align: center; padding: 3px 0; }
+#match-id { position: absolute; top: 0.5vw; left: 1vw; font-size: 1.5vw; z-index: 1; color: #fff; }
+#timer { font-size: 8vw; font-weight: bold; }
+.timer-controls { position: absolute; top: 50%; right: 2vw; transform: translateY(-50%); display: flex; gap: 0.5vw; }
+.timer-btn { background: #444; color: #fff; border: none; font-size: 1.2vw; width: 4vw; height: 4vw; cursor: pointer; }
+#scoreboard { display: flex; justify-content: space-between; align-items: flex-start; padding: 10px 20px; }
+.corner { width: 25vw; background: #800; padding: 10px; display: flex; flex-direction: column; align-items: center; }
+.corner.blue { background: #008; }
+.player-name { font-size: 3vw; margin-bottom: 2vw; }
+.section { display: flex; align-items: center; justify-content: flex-start; margin: 1vw 0; width: 100%; }
+.minus-btn, .plus-btn { background: #555; color: #fff; border: none; font-size: 1.5vw; width: 3vw; height: 3vw; margin: 0 1vw; cursor: pointer; }
+.section .label { font-size: 1.2vw; margin-left: 1vw; }
+.value { font-size: 3vw; width: 3vw; text-align: center; }
+.match-info { width: 30vw; text-align: center; display: flex; flex-direction: column; align-items: center; }
+#match-scores { font-size: 12vw; margin-bottom: 1vw; }
+#score-reset { background: #444; color: #fff; border: none; padding: 0.5vw 1vw; font-size: 1vw; cursor: pointer; margin-bottom: 1vw; }
+#first-take { display: flex; align-items: center; justify-content: flex-start; gap: 1vw; }
+.first-btn { background: #888; border: none; width: 3vw; height: 3vw; border-radius: 50%; cursor: pointer; }
+.bar { font-size: 2vw; }
+.label-ft { font-size: 1.5vw; }
+#preset-times { position: absolute; bottom: 1vw; left: 1vw; display: flex; gap: 1vw; }
+.preset-btn { background: #888; color: #fff; border: none; padding: 0.5vw 1vw; font-size: 1vw; cursor: pointer; }
+.preset-btn.active { background: #fff; color: #000; }
+#controls { display: flex; justify-content: flex-end; padding: 10px 20px; }
+#next-button { background: #222; color: #fff; border: none; padding: 8px 16px; font-size: 1vw; cursor: pointer; margin-bottom: 1vw; }

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>空手大会スコアボード</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="container">
+    <div id="timer-banner">
+      <div id="match-id">ID: 1-1</div>
+      <span id="timer">01:00</span>
+      <div class="timer-controls">
+        <button id="timer-start" class="timer-btn">Start</button>
+        <button id="timer-stop" class="timer-btn">Stop</button>
+        <button id="timer-plus" class="timer-btn">＋</button>
+        <button id="timer-minus" class="timer-btn">－</button>
+        <button id="timer-reset" class="timer-btn">RESET</button>
+      </div>
+    </div>
+    <div id="scoreboard">
+      <div class="corner red" id="corner-red">
+        <div id="red-name" class="player-name">山本</div>
+        <div class="section ippon" data-side="red" data-type="ippon">
+          <button class="plus-btn">＋</button><span class="value" id="red-ippon">0</span><button class="minus-btn">－</button><span class="label">一本</span>
+        </div>
+        <div class="section waza" data-side="red" data-type="waza">
+          <button class="plus-btn">＋</button><span class="value" id="red-waza">0</span><button class="minus-btn">－</button><span class="label">技あり</span>
+        </div>
+        <div class="section yuko" data-side="red" data-type="yuko">
+          <button class="plus-btn">＋</button><span class="value" id="red-yuko">0</span><button class="minus-btn">－</button><span class="label">有効</span>
+        </div>
+        <div class="section penalty" data-side="red" data-type="penalty">
+          <button class="plus-btn">＋</button><span class="value" id="red-penalty">0</span><button class="minus-btn">－</button><span class="label">PENALTY</span>
+        </div>
+      </div>
+      <div class="match-info">
+        <div id="match-scores">
+          <span id="red-score">0</span> - <span id="blue-score">0</span>
+        </div>
+        <button id="score-reset" class="reset-btn">RESET</button>
+        <div id="first-take">
+          <span class="bar">｜</span>
+          <button id="first-red" class="first-btn"></button>
+          <span class="label-ft">先取</span>
+          <button id="first-blue" class="first-btn"></button>
+          <span class="bar">｜</span>
+        </div>
+      </div>
+      <div class="corner blue" id="corner-blue">
+        <div id="blue-name" class="player-name">白石</div>
+        <div class="section ippon" data-side="blue" data-type="ippon">
+          <button class="plus-btn">＋</button><span class="value" id="blue-ippon">0</span><button class="minus-btn">－</button><span class="label">一本</span>
+        </div>
+        <div class="section waza" data-side="blue" data-type="waza">
+          <button class="plus-btn">＋</button><span class="value" id="blue-waza">0</span><button class="minus-btn">－</button><span class="label">技あり</span>
+        </div>
+        <div class="section yuko" data-side="blue" data-type="yuko">
+          <button class="plus-btn">＋</button><span class="value" id="blue-yuko">0</span><button class="minus-btn">－</button><span class="label">有効</span>
+        </div>
+        <div class="section penalty" data-side="blue" data-type="penalty">
+          <button class="plus-btn">＋</button><span class="value" id="blue-penalty">0</span><button class="minus-btn">－</button><span class="label">PENALTY</span>
+        </div>
+      </div>
+    </div>
+    <div id="preset-times">
+      <button class="preset-btn" data-time="60">1:00</button>
+      <button class="preset-btn" data-time="90">1:30</button>
+      <button class="preset-btn" data-time="120">2:00</button>
+      <button class="preset-btn" data-time="180">3:00</button>
+    </div>
+    <div id="controls">
+      <button id="next-button">NEXT: 赤 山本 vs 青 白石</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
